@@ -147,7 +147,7 @@ h2, h3, h1 {
     left: 0; 
     height: 100vh; 
     width: 45vw;
-    overflow: hidden; /
+    overflow: hidden; 
 }
 
 .right-text {
@@ -298,12 +298,10 @@ textarea {
 
 
 /*MOBILE STYLES*/
-@media only screen and (max-width: 400px) {
-    body {
-        background-color: #F5CF8E; /* Yellow */
-      }
+@media only screen and (max-width: 400px) {  
     
-      .main {
+    /*GENERAL*/
+      .page {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -317,27 +315,151 @@ textarea {
       header {
         position: relative;
       }
+
+      .left-photo {
+        position: relative;  
+        width: 100%;
+        height: fit-content;
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    .right-text {
+        width: 80vw;
+        margin: 0%;
+        padding: 0%;
+        padding-bottom: 5vh;
+        text-align: left;
+    }
+
+
+    /*CONTACTS*/
+    .contacts {
+        flex-wrap: wrap;
+    }
+
+    .left-form { 
+        width: 80vw;
+    }
+
+    input, textarea, .send {
+        width: 80vw;
+    }
+
+    .right-social {
+        font-size: 10px;
+        padding-top: 10vh;
+    }
+
+    .social {
+        flex-direction: row;
+        width: 80vw;
+        justify-content: space-evenly;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    /*PORTFOLIO*/
+    .portfolio {
+    padding:0%;
+       margin:0%;
+       width: 100%;
+    }
+
+    .portfolio-text {
+        width: 80vw;
+        text-align: left;
+    }
+
+    /*INDEX*/
+    .index-text {
+        font-size: 1em;
+        padding: 10px;
+    }
+    
 }
 
 
 /*TABLET STYLES*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: #F5CF8E; /* Yellow */
-  }
 
-  .main {
-    display: flex;
-    flex-direction: column; 
-  }
+     /*GENERAL*/
+     .page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      nav, .nav-center {
+        display:flex;
+        flex-direction: column;
+      }
+    
+      header {
+        position: relative;
+      }
 
-  nav, .nav-center {
-    display:flex;
-    flex-direction: column;
-  }
+      .left-photo {
+        position: relative;  
+        width: 100%;
+        height: fit-content;
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    .right-text {
+        width: 80vw;
+        margin: 0%;
+        padding: 0%;
+        padding-bottom: 5vh;
+    }
 
-  header {
-    position: relative;
-  }
+
+    /*CONTACTS*/
+    .contacts {
+        flex-wrap: wrap;
+    }
+
+    .left-form { 
+        width: 80vw;
+    }
+
+    input, textarea {
+        width: 80vw;
+    }
+
+    .send {
+        width: 50vw;
+        height: 5vh;
+    }
+
+    .right-social {
+        font-size: 10px;
+        padding-top: 5vh;
+    }
+
+    .social {
+        flex-direction: row;
+        width: 25vw;
+        justify-content: space-evenly;
+        padding-bottom: 5vh;
+    }
+
+    /*PORTFOLIO*/
+    .portfolio {
+    padding:0%;
+       margin:0%;
+       width: 100%;
+    }
+
+    .portfolio-text {
+        width: 80vw;
+    }
+
+    /*INDEX*/
+    .index-text {
+        font-size: 2em;
+        padding: 10px;
+    }
 
 }
