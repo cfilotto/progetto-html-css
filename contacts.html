@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Cecilia Filotto - Contatti</title>
+    <link rel="icon" type="image/x-icon" href="asset/img/favicon.ico">
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa {
+            font-size: 70px;
+            color: #FF8623;
+        }
+
+        .fa:hover {
+            color: #DD4C28;
+        }
+
+        .fa:active {
+            color: #FF8623;
+        }
+
+        body {
+            background-image: url("asset/img/bg_index.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul class="nav-left">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+
+            <ul class="nav-center">
+                <li><a href="profile.html">Mi presento</a></li>
+                <li><a href="resume.html">Curriculum</a></li>
+                <li><a href="policy.html">Valori</a></li>
+                <li class="dropdown">
+                    <a href="portfolio/index.html">Portfolio ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="portfolio/introduzione_sviluppo.html">HTML e CSS</a></li>
+                        <li><a href="portfolio/wordpress_oblique.html">Wordpress</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="contacts.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main contacts">
+
+        <div class="left-form">
+            <section>
+                <h1>Restiamo in contatto.</h1>
+                <p> Vuoi contattarmi per un progetto interessante? Compila il form, ti risponderò il prima possibile. Di
+                    solito fornisco risposte entro 24 ore nei giorni lavorativi, tuttavia potrebbero verificarsi
+                    periodi
+                    impegnativi in cui potrebbe essere necessario un po&rsquo; più di tempo per ricevere una mia
+                    risposta. Ti
+                    ringrazio
+                    sin da ora per la tua pazienza.</p>
+            </section>
+
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mqkvbydb"
+                method="post">
+                <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Nome e Cognome</label>
+                    <input type="text" name="name" id="full-name" placeholder="Paolo Rossi" required="">
+                    <label for="email-address">Indirizzo email</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="rossi.paolo@gmail.com"
+                        required="">
+                    <label for="message">Il tuo messaggio</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Scrivi qui il tuo messaggio."
+                        required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input class="send" type="submit" value="Invio">
+            </form>
+
+        </div>
+        <div class="right-social">
+            <h2>Puoi trovarmi anche qui:</h2>
+
+
+            <div class="social">
+                <a href="https://github.com/cfilotto"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/cecilia-filotto"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
