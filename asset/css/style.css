@@ -6,36 +6,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: #2A4857;
     color: #F8DCBF;
     text-decoration: none;
 }
-
+p {
+    margin-bottom: 1em;
+}
 a:link, a:visited {
     color:#FF8623;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
-  }
-
-  a:active {
+}
+a:active {
     text-decoration: underline;
     color: #F8DCBF;
-  }
-
-
+}
 img {
     max-width:100%;
     max-height:100%;
     object-fit: cover;
 }
-
 /*HEADER - NAVIGATION */
-
 header {
     background-color: #438D94;
     display: flex;
@@ -46,7 +41,6 @@ header {
     top: 0;
     width: 100%;
 }
-
 nav {
     width: 100%;
     display: flex;
@@ -56,11 +50,9 @@ nav {
     font-weight: 700;
     text-transform: uppercase;
 }
-
 .nav-center li {
     position: relative; 
 }
-
 .nav-left,
 .nav-center,
 .nav-right {
@@ -69,25 +61,22 @@ nav {
     display: flex;
     flex-direction: row;
 }
-
 .nav-left a,
 .nav-center a,
 .nav-right a {
     text-decoration: none;
     color: #F8DCBF;
     padding: 20px;
-    min-width: 150px; /* Adjust the width as needed */
+    min-width: 150px;
     text-align: center;
     display: block;
 }
-
 .nav-left a:hover,
 .nav-center a:hover,
 .nav-right a:hover {
     background-color: #FF8623;
     color: #438D94;
 }
-
 .dropdown-content {
     list-style: none;
     display: none;
@@ -97,41 +86,27 @@ nav {
     top: 100%;
     left: 0;
 }
-
 .nav-center li:hover .dropdown-content {
     display: block;
 }
-
-
-/*GENERAL PAGE*/
-.homepage, h1, h2, h3 {
+/*GENERAL PAGE*/ 
+h1, h2, h3 {
     font-family: 'Montagu Slab', serif;
     font-weight: 500;
     line-height: 1.5em;
-}
-
-p, h1 {
-margin-bottom: 1em;
-}
-
-h2, h3, h1 {
     margin-bottom: 1em;
     margin-top: 1em;
     text-align: center;
-    }
-
-
+}
 .main {
     margin-top: 60px;
 }
-
 .page {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
 }
-
 .page, .contacts, .portfolio {
     font-family: 'Figtree', sans-serif;
     font-weight: 500;
@@ -140,7 +115,6 @@ h2, h3, h1 {
     text-decoration: none;
     line-height: 1.5em;
 }
-
 .left-photo {
     flex: 0 0 auto;
     position: fixed; 
@@ -149,7 +123,6 @@ h2, h3, h1 {
     width: 45vw;
     overflow: hidden; 
 }
-
 .right-text {
     flex: 1;
     margin-left: 45vw;
@@ -158,8 +131,6 @@ h2, h3, h1 {
     align-items: center;
     flex-direction: column;
 }
-
-
 /*INDEX PAGE*/
 .homepage {
     display:flex;
@@ -169,14 +140,12 @@ h2, h3, h1 {
     flex-direction: column;
     margin-top: 0;
 }
-
 .index-photo {
     height: 50vh;
     border-radius: 50%; 
     overflow: hidden; 
     margin: 0 auto; 
 }
-
 .index-text {
     font-size: 2em; 
     margin-top: 20px; 
@@ -185,22 +154,18 @@ h2, h3, h1 {
     align-items: center;
     justify-content: space-evenly;
 }
-
-
 /*CONTACTS PAGE*/
 .contacts {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-
 .social {
     display: flex;
     width: 15vw;
     height:fit-content;
     justify-content: space-evenly;
 }
-
 .left-form {
     text-align:left;
     display: flex;
@@ -208,14 +173,12 @@ h2, h3, h1 {
     align-items: center;
     width: 50vw;
 }
-
 .right-social {
     width: 30vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 form, fieldset {
     text-align: center;
     display: flex;
@@ -226,11 +189,9 @@ form, fieldset {
     color: #FF8623;
     justify-content: space-between;
 }
-
 form {
     margin-top: 30px;
 }
-
 input, textarea {
     background-color:#F8DCBF;
     color:#2A4857; 
@@ -239,11 +200,9 @@ input, textarea {
     width: 40vw;
     border: 2px solid #438D94;
 }
-
 textarea {
     height:10vh;
 }
-
 .send {
     background-color:#FF8623;
     width: 15vw;
@@ -251,7 +210,6 @@ textarea {
     border: 2px solid #DD4C28;
     align-self: center;
 }
-
 /*PORTFOLIO PAGE*/
 .portfolio {
     padding: 20px 0;
@@ -261,21 +219,17 @@ textarea {
     flex-direction: column;
     align-items: center;
 }
-
 .portfolio-title, .portfolio {
     color: #FF8623;
 }
-
 .portfolio-text {
     width: 60vw;
     color: #F8DCBF;
     margin-top: 5vh;
 }
-
 .button-container {
     text-align: center; 
 }
-
 .custom-button {
     display: block;
     width: 250px; 
@@ -289,41 +243,33 @@ textarea {
     font-size: 30px; 
     text-transform: uppercase;
 }
-
 .custom-button:hover {
     background-color:#FF8623; 
     color:#438D94;
     text-decoration: none;
 }
-
-
 /*MOBILE STYLES*/
-@media only screen and (max-width: 400px) {  
-    
+@media only screen and (max-width: 400px) {    
     /*GENERAL*/
-      .page {
+    .page {
         display: flex;
         flex-direction: column;
         align-items: center;
-      }
-    
-      nav, .nav-center {
+    }
+    nav, .nav-center {
         display:flex;
         flex-direction: column;
-      }
-    
-      header {
+    }
+    header {
         position: relative;
-      }
-
-      .left-photo {
+    }
+    .left-photo {
         position: relative;  
         width: 100%;
         height: fit-content;
         padding: 0%;
         margin: 0%;
     }
-    
     .right-text {
         width: 80vw;
         margin: 0%;
@@ -331,26 +277,20 @@ textarea {
         padding-bottom: 5vh;
         text-align: left;
     }
-
-
     /*CONTACTS*/
     .contacts {
         flex-wrap: wrap;
     }
-
     .left-form { 
         width: 80vw;
     }
-
     input, textarea, .send {
         width: 80vw;
     }
-
     .right-social {
         font-size: 10px;
         padding-top: 10vh;
     }
-
     .social {
         flex-direction: row;
         width: 80vw;
@@ -358,108 +298,87 @@ textarea {
         padding-top: 5vh;
         padding-bottom: 5vh;
     }
-
     /*PORTFOLIO*/
     .portfolio {
     padding:0%;
        margin:0%;
        width: 100%;
     }
-
     .portfolio-text {
         width: 80vw;
         text-align: left;
     }
-
     /*INDEX*/
     .index-text {
         font-size: 1em;
         padding: 10px;
-    }
-    
+    }   
 }
-
 
 /*TABLET STYLES*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-
      /*GENERAL*/
-     .page {
+    .page {
         display: flex;
         flex-direction: column;
         align-items: center;
-      }
-    
-      nav, .nav-center {
+    }
+    nav, .nav-center {
         display:flex;
         flex-direction: column;
-      }
-    
-      header {
+    }
+    header {
         position: relative;
-      }
-
-      .left-photo {
+    }
+    .left-photo {
         position: relative;  
         width: 100%;
         height: fit-content;
         padding: 0%;
         margin: 0%;
     }
-    
     .right-text {
         width: 80vw;
         margin: 0%;
         padding: 0%;
         padding-bottom: 5vh;
     }
-
-
     /*CONTACTS*/
     .contacts {
         flex-wrap: wrap;
     }
-
     .left-form { 
         width: 80vw;
     }
-
     input, textarea {
         width: 80vw;
     }
-
     .send {
         width: 50vw;
         height: 5vh;
     }
-
     .right-social {
         font-size: 10px;
         padding-top: 5vh;
     }
-
     .social {
         flex-direction: row;
         width: 25vw;
         justify-content: space-evenly;
         padding-bottom: 5vh;
     }
-
     /*PORTFOLIO*/
     .portfolio {
     padding:0%;
        margin:0%;
        width: 100%;
     }
-
     .portfolio-text {
         width: 80vw;
     }
-
     /*INDEX*/
     .index-text {
         font-size: 2em;
         padding: 10px;
     }
-
 }
