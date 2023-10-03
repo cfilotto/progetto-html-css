@@ -10,6 +10,10 @@ body {
     background-color: #2A4857;
     color: #F8DCBF;
     text-decoration: none;
+    background-image: url(../img/bg_index.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 p {
     margin-bottom: 1em;
@@ -90,6 +94,9 @@ nav {
     display: block;
 }
 /*GENERAL PAGE*/ 
+.body-blank {
+    background-image: none;
+}
 h1, h2, h3 {
     font-family: 'Montagu Slab', serif;
     font-weight: 500;
@@ -154,6 +161,11 @@ h1, h2, h3 {
     align-items: center;
     justify-content: space-evenly;
 }
+.homepage h1, .homepage h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #FF8623;
+}
 /*CONTACTS PAGE*/
 .contacts {
     display: flex;
@@ -210,6 +222,16 @@ textarea {
     border: 2px solid #DD4C28;
     align-self: center;
 }
+.fa {
+    font-size: 70px;
+    color: #FF8623;
+}
+.fa:hover {
+    color: #DD4C28;
+}
+.fa:active {
+    color: #FF8623;
+}
 /*PORTFOLIO PAGE*/
 .portfolio {
     padding: 20px 0;
@@ -232,7 +254,7 @@ textarea {
 }
 .custom-button {
     display: block;
-    width: 250px; 
+    width: fit-content; 
     height: 50px; 
     margin: 50px 0; 
     padding: 10px;
