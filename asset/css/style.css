@@ -148,23 +148,27 @@ h1, h2, h3 {
     margin-top: 0;
 }
 .index-photo {
-    height: 50vh;
+    height: 40vh;
     border-radius: 50%; 
     overflow: hidden; 
     margin: 0 auto; 
 }
 .index-text {
     font-size: 2em; 
-    margin-top: 20px; 
+    margin-top: 25px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
-.homepage h1, .homepage h2 {
-    margin-bottom: 0;
+.homepage h1, .homepage h2, .homepage p {
+    margin-bottom: 5px;
     margin-top: 0;
     color: #FF8623;
+}
+.homepage p {
+    font-family: 'Montagu Slab', serif;
+    font-size: large;
 }
 /*CONTACTS PAGE*/
 .contacts {
