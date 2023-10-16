@@ -1,6 +1,5 @@
 /*BASE STYLES*/
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;700&family=Montagu+Slab:opsz,wght@16..144,500&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -98,7 +97,7 @@ h1, h2, h3 {
     text-align: center;
 }
 .main {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 .page {
     display: flex;
@@ -152,6 +151,7 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center;
 }
 .homepage h1, .homepage h2, .homepage p {
     margin-bottom: 5px;
@@ -170,7 +170,7 @@ h1, h2, h3 {
 }
 .social {
     display: flex;
-    width: 15vw;
+    width: 30vw;
     height:fit-content;
     justify-content: space-evenly;
 }
@@ -198,12 +198,13 @@ form, fieldset {
     justify-content: space-between;
 }
 form {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 input, textarea {
     background-color:#F8DCBF;
     color:#2A4857; 
-    margin-top: 10px;
+    margin-top: 3px;
+    margin-bottom: 10px;
     height: 5vh;
     width: 40vw;
     border: 2px solid #438D94;
@@ -213,8 +214,8 @@ textarea {
 }
 .send {
     background-color:#FF8623;
-    width: 15vw;
-    height: 10vh;
+    width: 10vw;
+    height: 8vh;
     border: 2px solid #DD4C28;
     align-self: center;
 }
@@ -245,27 +246,6 @@ textarea {
     color: #F8DCBF;
     margin-top: 5vh;
 }
-.button-container {
-    text-align: center; 
-}
-.custom-button {
-    display: block;
-    width: fit-content; 
-    height: 50px; 
-    margin: 50px 0; 
-    padding: 10px;
-    background-color:#438D94;
-    color:#F8DCBF;
-    border: none; 
-    cursor: pointer; 
-    font-size: 30px; 
-    text-transform: uppercase;
-}
-.custom-button:hover {
-    background-color:#FF8623; 
-    color:#438D94;
-    text-decoration: none;
-}
 /*MOBILE STYLES*/
 @media only screen and (max-width: 400px) {    
     /*GENERAL*/
@@ -273,6 +253,10 @@ textarea {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    h1, h2, h3 {
+        font-size:larger;
+        color:#FF8623; 
     }
     .left-photo {
         position: relative;  
@@ -287,6 +271,9 @@ textarea {
         padding: 0%;
         padding-bottom: 5vh;
         text-align: left;
+    }
+    .contacts, .portfolio {
+        margin-top: 70px;
     }
     /*CONTACTS*/
     .contacts {
@@ -303,21 +290,23 @@ textarea {
         padding-top: 10vh;
     }
     .social {
-        flex-direction: row;
-        width: 80vw;
-        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        height: 40vh;
+        justify-content: space-between;
         padding-top: 5vh;
         padding-bottom: 5vh;
     }
     /*PORTFOLIO*/
     .portfolio {
-    padding:0%;
-       margin:0%;
-       width: 100%;
+        padding:0%;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     .portfolio-text {
-        width: 80vw;
         text-align: left;
+        width: 80vw;
     }
     /*INDEX*/
     .index-text {
@@ -347,6 +336,13 @@ textarea {
         padding: 0%;
         padding-bottom: 5vh;
     }
+    .contacts, .portfolio {
+        margin-top: 70px;
+    }
+    h1, h2, h3 {
+        font-size:xx-large;
+        color:#FF8623; 
+    }
     /*CONTACTS*/
     .contacts {
         flex-wrap: wrap;
@@ -367,17 +363,18 @@ textarea {
     }
     .social {
         flex-direction: row;
-        width: 25vw;
+        width: 50vw;
         justify-content: space-evenly;
         padding-bottom: 5vh;
     }
     /*PORTFOLIO*/
     .portfolio {
-    padding:0%;
-       margin:0%;
-       width: 100%;
+        padding:0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
     }
-    .portfolio-text {
+    .portfolio-text, .portfolio-image, .portfolio-tile {
         width: 80vw;
     }
     /*INDEX*/
